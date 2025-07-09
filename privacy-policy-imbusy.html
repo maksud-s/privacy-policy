@@ -70,6 +70,13 @@
       font-weight: 600;
     }
 
+    .highlight {
+      background-color: #fff3cd;
+      padding: 12px;
+      border-left: 4px solid #ffc107;
+      margin: 16px 0;
+    }
+
     @media (max-width: 600px) {
       body {
         padding: 16px;
@@ -89,74 +96,127 @@
 <body>
 
 <h1>Privacy Policy - I Am Busy Now</h1>
-<p>This Privacy Policy outlines how <strong>I Am Busy Now</strong> (the "App"), developed by <strong>The Mystery Lens</strong> (<a href="https://aimoneymake.com">aimoneymake.com</a>), collects, uses, maintains, and discloses information. We are committed to protecting your privacy.</p>
-<p><strong>Last Updated: June 26, 2025</strong></p>
+<p>This Privacy Policy describes how <strong>I Am Busy Now</strong> (the "App"), developed by <strong>The Mystery Lens</strong>, collects, uses, maintains, and discloses information collected from users of our mobile application. We are committed to protecting your privacy and being transparent about our data practices.</p>
+<p><strong>Last Updated: December 15, 2024</strong></p>
 
-<h2>1. Information We Access and Collect (Limited)</h2>
-<p>
-  The <strong>I Am Busy Now</strong> App is designed to provide specific call management functionality. To achieve this, it requires access to certain device information and capabilities. We want to be clear about what information is accessed and for what purposes:
-</p>
+<h2>1. Information We Collect and Process</h2>
+<p>Our App is designed to provide call management functionality. To deliver this service, we access certain device information and capabilities:</p>
+
+<h3>1.1 Device Information We Access</h3>
 <ul>
-  <li><strong>Device Phone State:</strong> The App accesses your device's phone state (e.g., ringing, idle, off-hook) to detect incoming calls and manage their status (i.e., making your phone appear busy to the caller). We do not store your call logs or the content of your calls.</li>
-  <li><strong>Device Identifiers (via Third-Party Advertising):</strong> The App integrates Google AdMob to display advertisements. AdMob may collect certain device identifiers (such as Android Advertising ID, IP address, and other unique identifiers) and app usage data (e.g., app interactions, crash logs, diagnostics) to serve personalized ads and for analytics purposes. This data is collected and processed according to Google's Privacy Policy.</li>
+  <li><strong>Phone State Information:</strong> We access your device's phone state to detect incoming calls and manage call responses. This includes call status (ringing, idle, in-call) but does not include call content, call logs, or call recordings.</li>
+  <li><strong>Network Information:</strong> We access network connectivity status to ensure proper app functionality and ad delivery.</li>
+  <li><strong>Device Identifiers:</strong> Through Google AdMob, we may collect advertising identifiers and device information for ad personalization and analytics.</li>
 </ul>
 
-<h2>2. How Your Information Is Used</h2>
-<p>The limited information accessed by the App is used for the following purposes:</p>
+<h3>1.2 Information We Do NOT Collect</h3>
 <ul>
-  <li>To enable the core functionality of Busy Mode, allowing the App to detect and automatically send a busy signal to incoming calls when activated.</li>
-  <li>To display relevant advertisements through Google AdMob, which helps support the continued development and maintenance of the App.</li>
-  <li>For internal analytics (via AdMob) to understand app performance, identify issues, and improve user experience.</li>
+  <li>Personal contact information (names, phone numbers, email addresses)</li>
+  <li>Call logs or call history</li>
+  <li>Call recordings or call content</li>
+  <li>SMS or messaging data</li>
+  <li>Location data</li>
+  <li>Personal photos, files, or documents</li>
 </ul>
 
-<h2>3. Permissions Used</h2>
-<p>To perform its functions, the App requests the following permissions. These permissions are accessed only when necessary for the described functionality:</p>
+<h2>2. How We Use Information</h2>
+<p>The information we access is used solely for the following purposes:</p>
 <ul>
-  <li><strong>android.permission.READ_PHONE_STATE:</strong> To detect the status of incoming calls (e.g., when the phone is ringing).</li>
-  <li><strong>android.permission.ANSWER_PHONE_CALLS:</strong> Used in conjunction with call management functionalities to influence the state of incoming calls.</li>
-  <li><strong>android.permission.CALL_PHONE:</strong> For programmatically managing call states and potentially affecting call routing (e.g., to send a busy signal).</li>
-  <li><strong>android.permission.FOREGROUND_SERVICE:</strong> To allow the App to run a service in the background that continuously monitors phone state and manages calls, even when the App's user interface is closed. This service displays a persistent notification to inform you that it is active.</li>
-  <li><strong>android.permission.FOREGROUND_SERVICE_PHONE_CALL:</strong> (For Android 9 and above) A specific type of foreground service permission for apps that handle phone calls in the background.</li>
-  <li><strong>android.permission.MODIFY_PHONE_STATE:</strong> Used for more advanced control over phone state, including actions related to call handling (e.g., ending calls). <strong>This is a highly sensitive permission.</strong></li>
-  <li><strong>android.permission.INTERNET:</strong> To connect to the internet for loading advertisements and checking for app updates.</li>
-  <li><strong>android.permission.ACCESS_NETWORK_STATE:</strong> To check the current network connectivity status before attempting network operations.</li>
+  <li><strong>Core App Functionality:</strong> To detect incoming calls and automatically respond with a busy signal when the app is activated</li>
+  <li><strong>Service Operation:</strong> To run the foreground service that monitors phone state and manages call responses</li>
+  <li><strong>Advertising:</strong> To display relevant advertisements through Google AdMob</li>
+  <li><strong>App Performance:</strong> To ensure network connectivity for proper app operation</li>
+  <li><strong>Notifications:</strong> To display service status notifications when the app is running</li>
 </ul>
-<p>These permissions are used solely for the functionality described above and in accordance with Google Play Store policies.</p>
 
-<h2>4. Third-Party Services (Google AdMob)</h2>
-<p>
-  This App uses <strong>Google AdMob</strong> for displaying advertisements. AdMob is an advertising service provided by Google.
-  AdMob's use of data is governed by Google's Privacy Policy. Please refer to
-  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for more details on how Google collects, processes, and uses data from services like AdMob.
-  You may be able to opt out of personalized advertising by visiting your device's ad settings (e.g., Android Settings > Google > Ads).
-</p>
+<h2>3. Permissions Explained</h2>
+<p>Our App requests the following permissions, which are used only for the stated purposes:</p>
+<ul>
+  <li><strong>READ_PHONE_STATE:</strong> Required to detect incoming calls and current phone status</li>
+  <li><strong>ANSWER_PHONE_CALLS:</strong> Required to allow the app (when set as default dialer) to detect and reject incoming calls by simulating a busy status</li>
+  <li><strong>FOREGROUND_SERVICE:</strong> Required to run the call monitoring service in the background</li>
+  <li><strong>FOREGROUND_SERVICE_PHONE_CALL:</strong> Required for Android 14+ to run phone call related foreground services</li>
+  <li><strong>POST_NOTIFICATIONS:</strong> Required to display service status notifications</li>
+  <li><strong>INTERNET:</strong> Required for displaying advertisements and checking app updates</li>
+  <li><strong>ACCESS_NETWORK_STATE:</strong> Required to check network connectivity before internet operations</li>
+</ul>
 
-<h2>5. Data Retention and Security</h2>
-<p>
-  The <strong>I Am Busy Now</strong> App does not store your personal call logs, contacts, or other sensitive personal information on its servers or on your device beyond what is necessary for immediate app functionality and advertising via AdMob.
-  We implement reasonable security measures to protect the integrity and security of the limited data accessed. However, no method of transmission over the Internet or method of electronic storage is 100% secure.
-</p>
+<div class="highlight">
+  <strong>Important:</strong> We only access phone state information necessary for call management. We do not record, store, or transmit your calls or personal information.
+</div>
 
-<h2>6. Your Rights</h2>
-<p>
-  Since the App primarily operates on-device and does not collect or store your direct personal identifiers (like name, email, phone number, contacts, or messages), direct data access or deletion requests through us for App-specific data are generally not applicable. For data collected by third-party services like AdMob, please refer to their respective privacy policies for your rights and how to exercise them (e.g., Google's privacy policy for AdMob data).
-</p>
+<h2>4. Third-Party Services</h2>
+<p>This App uses <strong>Google AdMob</strong> for displaying advertisements. AdMob may collect and process certain information according to Google's Privacy Policy:</p>
+<ul>
+  <li>Device identifiers (Android Advertising ID)</li>
+  <li>IP address and general location (country/region level)</li>
+  <li>App usage analytics</li>
+  <li>Ad interaction data</li>
+</ul>
+<p>For complete details on Google's data practices, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
 
-<h2>7. Children’s Privacy</h2>
-<p>
-  The <strong>I Am Busy Now</strong> App is not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us. If we become aware that we have collected information from a child under 13 without verification of parental consent, we take steps to remove that information from our servers.
-</p>
+<h3>4.1 Advertising Controls</h3>
+<p>You can control ad personalization by:</p>
+<ul>
+  <li>Visiting your device's ad settings (Android Settings > Google > Ads)</li>
+  <li>Opting out of personalized advertising</li>
+  <li>Resetting your advertising ID</li>
+</ul>
 
-<h2>8. Changes to This Privacy Policy</h2>
-<p>
-  We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
-</p>
+<h2>5. Data Storage and Security</h2>
+<p>We implement the following security measures:</p>
+<ul>
+  <li><strong>No Personal Data Storage:</strong> We do not store personal information, call logs, or sensitive data on our servers</li>
+  <li><strong>Local Processing:</strong> All call management functions are processed locally on your device</li>
+  <li><strong>Secure Transmission:</strong> Any data transmitted to third parties (like AdMob) uses secure protocols</li>
+  <li><strong>Limited Data Access:</strong> We only access the minimum data necessary for app functionality</li>
+</ul>
 
-<h2>9. Contact Us</h2>
-<p>
-  If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:<br />
-  <strong>Email:</strong> support@aimoneymake.com<br />
-  <strong>Website:</strong> <a href="https://aimoneymake.com">aimoneymake.com</a>
+<h2>6. Data Sharing and Disclosure</h2>
+<p>We do not sell, trade, or rent your personal information. We may share limited information only in the following circumstances:</p>
+<ul>
+  <li><strong>With Google AdMob:</strong> For advertising and analytics purposes, as described in their privacy policy</li>
+  <li><strong>Legal Requirements:</strong> If required by law or to protect our rights and safety</li>
+  <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets</li>
+</ul>
+
+<h2>7. User Rights and Controls</h2>
+<p>You have the following rights regarding your data:</p>
+<ul>
+  <li><strong>Permission Control:</strong> You can revoke app permissions through your device settings</li>
+  <li><strong>Ad Personalization:</strong> You can opt out of personalized ads through your device settings</li>
+  <li><strong>App Uninstall:</strong> You can uninstall the app at any time to stop all data processing</li>
+  <li><strong>Data Requests:</strong> Contact us for questions about data practices</li>
+</ul>
+
+<h2>8. Children's Privacy</h2>
+<p>Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that we have collected information from a child under 13, we will take immediate steps to delete such information. If you are a parent or guardian and believe your child has provided us with information, please contact us immediately.</p>
+
+<h2>9. International Data Transfers</h2>
+<p>If you are located outside the United States, please note that information we collect may be transferred to and processed in the United States or other countries where our service providers operate. By using our App, you consent to such transfers.</p>
+
+<h2>10. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we do, we will:</p>
+<ul>
+  <li>Post the updated policy on this page</li>
+  <li>Update the "Last Updated" date</li>
+  <li>Notify users of significant changes through the app or other means</li>
+</ul>
+<p>We encourage you to review this Privacy Policy periodically for any changes.</p>
+
+<h2>11. Contact Information</h2>
+<p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+<ul>
+  <li><strong>Email:</strong> support@aimoneymake.com</li>
+  <li><strong>Website:</strong> <a href="https://aimoneymake.com">aimoneymake.com</a></li>
+  <li><strong>Response Time:</strong> We aim to respond to all inquiries within 48 hours</li>
+</ul>
+
+<h2>12. Governing Law</h2>
+<p>This Privacy Policy is governed by and construed in accordance with the laws of the jurisdiction where our company is located. Any disputes arising from this policy will be resolved in the appropriate courts of that jurisdiction.</p>
+
+<p style="margin-top: 40px; font-size: 14px; color: #666;">
+  <strong>Effective Date:</strong> This Privacy Policy is effective as of the last updated date shown above.
 </p>
 
 </body>
