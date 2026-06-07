@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Status Saver</title>
+
     <style>
         :root {
             color-scheme: light dark;
+            --primary: #1db06f;
+            --primary-dark: #14784f;
+            --bg: #f7fafc;
+            --text: #263238;
+            --muted: #607d8b;
+            --card: #ffffff;
+            --border: rgba(29, 176, 111, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            background: #f7fafc;
-            color: #263238;
+            background: var(--bg);
+            color: var(--text);
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.65;
         }
 
         main {
-            max-width: 860px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 28px 18px 42px;
+            padding: 28px 18px 44px;
+        }
+
+        .container {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
         }
 
         h1 {
             margin: 0 0 6px;
-            color: #1db06f;
-            font-size: 30px;
+            color: var(--primary);
+            font-size: 32px;
         }
 
         h2 {
-            margin-top: 28px;
-            color: #1a7f56;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
             font-size: 20px;
         }
 
@@ -41,11 +62,15 @@
         }
 
         ul {
-            padding-left: 20px;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
         }
 
         a {
-            color: #14784f;
+            color: var(--primary-dark);
             font-weight: 600;
             text-decoration: none;
         }
@@ -56,173 +81,194 @@
 
         .meta {
             margin-top: 0;
-            color: #607d8b;
+            color: var(--muted);
             font-size: 14px;
         }
 
+        .notice {
+            background: rgba(29, 176, 111, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 12px 14px;
+            border-radius: 8px;
+        }
+
         @media (prefers-color-scheme: dark) {
-            body {
-                background: #16242e;
-                color: #e8f1f4;
+            :root {
+                --bg: #16242e;
+                --text: #e8f1f4;
+                --muted: #a8bac3;
+                --card: #1f303b;
+                --border: rgba(73, 209, 143, 0.18);
+                --primary: #49d18f;
+                --primary-dark: #49d18f;
             }
 
-            h1,
-            h2,
-            a {
-                color: #49d18f;
+            .container {
+                box-shadow: none;
             }
 
-            .meta {
-                color: #a8bac3;
+            .notice {
+                background: rgba(73, 209, 143, 0.10);
             }
         }
     </style>
 </head>
+
 <body>
 <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: May 31, 2026</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective date: 08 Jul 2026</p>
 
-    <p>
-        Status Saver is provided by Khushi Digital Solutions as a free mobile application. This Privacy Policy explains how
-        information is accessed, used, stored, and shared when you use the app.
-    </p>
+        <p>
+            Status Saver is provided by Khushi Digital Solutions as a free mobile application. This Privacy Policy
+            explains how information is accessed, used, stored, and shared when you use the app.
+        </p>
 
-    <h2>1. App Independence</h2>
-    <p>
-        Status Saver is an independent utility. It is not affiliated with, endorsed by, sponsored by, or officially
-        connected to any external messaging platform, social platform, or device manufacturer. All names, logos, and
-        media shown by external services remain the property of their respective owners.
-    </p>
+        <h2>1. App Independence</h2>
+        <p>
+            Status Saver is an independent utility application. It is not affiliated with, endorsed by, sponsored by, or
+            officially connected to any external messaging platform, social platform, company, product, brand, or device
+            manufacturer. All names, logos, trademarks, and media shown by external services remain the property of their
+            respective owners.
+        </p>
 
-    <h2>2. Information We Access</h2>
-    <p>
-        The app is designed to work mostly on your device. Depending on the feature you choose to use, the app may
-        access the following information:
-    </p>
-    <ul>
-        <li>
-            Media files and folders that you select or allow, so the app can display, preview, save, repost, or share
-            temporary media/status files.
-        </li>
-        <li>
-            Photos and videos permission, or storage/folder permission, so the app can read supported media files and
-            save selected files to your device.
-        </li>
-        <li>
-            Phone number, country code, and message text entered in the Direct Chat feature. This information is used
-            only to open the selected conversation flow through the external chat service chosen by the user.
-        </li>
-        <li>
-            Camera, microphone, file, and notification permissions where required by Android or by a web-based companion
-            feature. These permissions are requested only when the related feature needs them.
-        </li>
-        <li>
-            Basic app settings stored on your device, such as theme preference, selected folders, update prompts, ad
-            display settings, Favorites, and Collections. Favorites and Collections are stored locally as references to
-            saved files.
-        </li>
-        <li>
-            Advertising identifiers, device information, approximate network information, diagnostics, and ad interaction
-            data may be processed by advertising SDKs used in the app.
-        </li>
-    </ul>
+        <h2>2. Information We Access</h2>
+        <p>
+            The app is designed to work mostly on your device. Depending on the feature you choose to use, the app may
+            access the following information:
+        </p>
 
-    <h2>3. Information We Do Not Collect</h2>
-    <p>
-        Khushi Digital Solutions does not operate a user account system for this app and does not collect or store your
-        personal media files, saved status files, phone numbers, contact list, direct message text, or gallery content on
-        our own servers.
-    </p>
+        <ul>
+            <li>
+                Media files and folders that you select or allow, so the app can display, preview, save, repost, share,
+                or manage supported status media files.
+            </li>
+            <li>
+                Photos, videos, storage, or folder access permission where required by Android, so the app can read
+                supported media files and save selected files to your device.
+            </li>
+            <li>
+                Phone number, country code, and optional message text entered in the Direct Chat feature. This
+                information is used only to open the selected chat flow through the external app chosen by the user.
+            </li>
+            <li>
+                Basic app settings stored locally on your device, such as theme preference, selected folders, favorites,
+                collections, update prompts, and ad display settings.
+            </li>
+            <li>
+                Advertising identifiers, device information, approximate network information, diagnostics, and ad
+                interaction data may be processed by advertising SDKs used in the app.
+            </li>
+        </ul>
 
-    <h2>4. How Information Is Used</h2>
-    <p>
-        Information accessed by the app is used only for app functionality, including:
-    </p>
-    <ul>
-        <li>showing and previewing media files available on your device;</li>
-        <li>saving selected files to your gallery or downloads folder;</li>
-        <li>sharing or reposting files only when you choose that action;</li>
-        <li>keeping Favorites and Collections on your device using local file references;</li>
-        <li>opening a direct chat flow when you enter a number/message and tap send;</li>
-        <li>checking a remote configuration file for app update and ad display settings;</li>
-        <li>serving, measuring, limiting, and protecting advertisements.</li>
-    </ul>
+        <h2>3. Information We Do Not Collect</h2>
+        <p>
+            Khushi Digital Solutions does not operate a user account system for this app and does not collect or store
+            your personal media files, saved status files, phone numbers, contact list, direct message text, or gallery
+            content on our own servers.
+        </p>
 
-    <h2>5. Sharing of Information</h2>
-    <p>
-        We do not sell your personal content. We do not upload your media files, saved files, phone numbers, or message
-        text to our own servers. Information may be shared only in these situations:
-    </p>
-    <ul>
-        <li>
-            When you choose to share, repost, save, or open content through another app or external service.
-        </li>
-        <li>
-            When you choose the backup option, Android's share sheet is used so you can send selected saved files to
-            Google Drive or another app you choose. The app does not access your Google account or upload files by itself.
-        </li>
-        <li>
-            Advertising partners may receive device identifiers, ad identifiers, diagnostics, and ad interaction data as
-            needed to show ads, prevent fraud, measure performance, and comply with law.
-        </li>
-        <li>
-            If required by law, regulation, legal process, or to protect the rights, safety, and security of users, the
-            app, or the public.
-        </li>
-    </ul>
+        <p class="notice">
+            The app does not request or use microphone, camera, location, contacts, call logs, SMS, or audio recording
+            permissions.
+        </p>
 
-    <h2>6. Third-Party Services</h2>
-    <p>
-        The app may use third-party SDKs and services for advertising, mediation, update configuration, and app
-        operation. These providers may process information under their own privacy policies.
-    </p>
-    <ul>
-        <li>
-            Google AdMob and Google services:
-            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>,
-            <a href="https://policies.google.com/technologies/ads">Google Advertising</a>, and
-            <a href="https://policies.google.com/technologies/partner-sites">Google Partner Sites</a>.
-        </li>
-        <li>
-            Unity LevelPlay / ironSource and related ad mediation services:
-            <a href="https://unity.com/legal/privacy-policy">Unity Privacy Policy</a>.
-        </li>
-    </ul>
+        <h2>4. How Information Is Used</h2>
+        <p>
+            Information accessed by the app is used only for app functionality, including:
+        </p>
 
-    <h2>7. Data Retention and Deletion</h2>
-    <p>
-        Khushi Digital Solutions does not retain your personal media, chat input, or selected files on our own servers.
-        Files saved through the app remain on your device until you delete them. You can remove locally stored app data
-        by clearing the app's storage from Android settings, deleting saved files from your device, or revoking
-        folder/media permissions from Android settings.
-    </p>
+        <ul>
+            <li>showing and previewing supported media files available on your device;</li>
+            <li>saving selected photos and videos to your device;</li>
+            <li>sharing or reposting files only when you choose that action;</li>
+            <li>keeping favorites and collections locally on your device;</li>
+            <li>opening a direct chat flow when you enter a number/message and tap send;</li>
+            <li>checking remote configuration for app updates and ad display settings;</li>
+            <li>serving, measuring, limiting, and protecting advertisements.</li>
+        </ul>
 
-    <h2>8. Security</h2>
-    <p>
-        The app uses Android's permission system and local device storage controls to help protect your information.
-        Because no method of electronic storage or transmission is completely secure, we cannot guarantee absolute
-        security, but we limit access to what is needed for the features you use.
-    </p>
+        <h2>5. Sharing of Information</h2>
+        <p>
+            We do not sell your personal content. We do not upload your media files, saved files, phone numbers, or
+            message text to our own servers. Information may be shared only in these situations:
+        </p>
 
-    <h2>9. Children's Privacy</h2>
-    <p>
-        Status Saver is not directed to children under 13. We do not knowingly collect personal information from
-        children.
-    </p>
+        <ul>
+            <li>
+                When you choose to share, repost, save, or open content through another app or external service.
+            </li>
+            <li>
+                When you choose a backup or share option, Android's share sheet may be used so you can send selected
+                saved files to another app or service you choose. The app does not access your external accounts or
+                upload files by itself.
+            </li>
+            <li>
+                Advertising partners may receive device identifiers, advertising identifiers, diagnostics, and ad
+                interaction data as needed to show ads, prevent fraud, measure performance, and comply with applicable
+                laws.
+            </li>
+            <li>
+                If required by law, regulation, legal process, or to protect the rights, safety, and security of users,
+                the app, or the public.
+            </li>
+        </ul>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
-        effective date. Continued use of the app after an update means you accept the revised policy.
-    </p>
+        <h2>6. Third-Party Services</h2>
+        <p>
+            The app may use third-party SDKs and services for advertising, app updates, remote configuration,
+            ad-related measurement, fraud prevention, and app operation. These providers may process information under
+            their own privacy policies.
+        </p>
 
-    <h2>11. Contact Us</h2>
-    <p>
-        If you have questions about this Privacy Policy or privacy practices for this app, contact:
-        <br>
-        <strong>Khushi Digital Solutions</strong>
-    </p>
+        <ul>
+            <li>
+                Google AdMob and Google services:
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>,
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising</a>,
+                and
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google Partner Sites</a>.
+            </li>
+        </ul>
+
+        <h2>7. Data Retention and Deletion</h2>
+        <p>
+            Khushi Digital Solutions does not retain your personal media, chat input, or selected files on our own
+            servers. Files saved through the app remain on your device until you delete them. You can remove locally
+            stored app data by clearing the app's storage from Android settings, deleting saved files from your device,
+            or revoking folder/media permissions from Android settings.
+        </p>
+
+        <h2>8. Security</h2>
+        <p>
+            The app uses Android's permission system and local device storage controls to help protect your information.
+            Because no method of electronic storage or transmission is completely secure, we cannot guarantee absolute
+            security, but we limit access to what is needed for the features you use.
+        </p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>
+            Status Saver is not directed to children under 13. We do not knowingly collect personal information from
+            children. If you believe a child has provided personal information through the app, please contact us so we
+            can review the concern.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated
+            effective date. Continued use of the app after an update means you accept the revised policy.
+        </p>
+
+        <h2>11. Contact Us</h2>
+        <p>
+            If you have questions about this Privacy Policy or privacy practices for this app, contact:
+            <br><br>
+            <strong>Khushi Digital Solutions</strong><br>
+            Email:
+            <a href="mailto:khushidigital31@gmail.com">khushidigital31@gmail.com</a>
+        </p>
+    </div>
 </main>
 </body>
 </html>
